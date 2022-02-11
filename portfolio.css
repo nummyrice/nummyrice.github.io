@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Neonderthaw&family=Press+Start+2P&family=Roboto&display=swap');
+/* font-family: 'Berkshire Swash', cursive;
+font-family: 'Neonderthaw', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Roboto', sans-serif; */
+/* @media screen and (max-width: 820px) { */
+    body {
+        margin: 0;
+    }
+    body section {
+        width: 375px;
+        /* background-color: blue; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* STICKY MENU */
+    #mobile_menu {
+        width: 75px;
+        height: 100px;
+        position: sticky;
+        top: 5px;
+        align-self: flex-start;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+    }
+
+/* NAVIGATION BAR */
+    nav {
+        display: flex;
+        width: 375px;
+        height: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: space-between;
+        align-items: center;
+        /* border-bottom: 2px solid black; */
+        /* display: inline-flex; */
+    }
+
+    nav a {
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+    hr {
+        border: 1px solid black;
+        width: 100vw;
+    }
+
+/* INTRO */
+    #photo_and_name {
+        width: 375px;
+        height: 150px;
+        margin: 10px 50px 10px auto;
+        /* display: flex; */
+    }
+
+    #photo {
+        width: 120px;
+        display: inline;
+    }
+
+    #my_name {
+        /* width: 120px; */
+        display: inline;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 15px;
+    }
+
+    p {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+    }
+
+    section {
+        margin-top: 100px;
+    }
+
+/* TABLEGATER */
+    #tableGater_section_head {
+        width: 350px;
+        height: 100px;
+        margin: 10px auto 10px auto;
+    }
+    #tableGater_section_head .title {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 15px;
+        display: inline;
+    }
+
+    #tableGater_section_head svg {
+        display: inline;
+    }
+
+    #tableGater_img1,
+    #tableGater_img2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+
+    #tableGater img {
+        width: 275px;
+    }
+    #tableGater_tryme {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 20px;
+        /* overflow-wrap: break-word; */
+        text-align: center;
+    }
+
+/* HARMONY.IO */
+
+    #harmony_section_head {
+        width: 350px;
+        height: 100px;
+        margin: 10px auto 10px auto;
+    }
+
+    #harmony_section_head .title {
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 40px;
+        display: inline;
+    }
+
+    #harmony_section_head svg {
+        display: inline;
+    }
+
+    #harmony img {
+        width: 275px;
+    }
+
+    #harmony_img1,
+    #harmony_img2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+
+    #harmony_tryme {
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 30px;
+        /* overflow-wrap: break-word; */
+        text-align: center;
+        width: 40px;
+        line-height: 30px;
+    }
+
+/* QUICKCAST */
+    #quickCast_section_head {
+        width: 350px;
+        height: 100px;
+        margin: 10px auto 10px auto;
+    }
+
+    #quickCast_section_head .title {
+        font-family: 'Neonderthaw', cursive;
+        font-size: 40px;
+        display: inline;
+    }
+
+    #quickCast_section_head svg {
+        display: inline;
+    }
+
+    #quickCast img {
+        width: 275px;
+    }
+
+    #quickCast_img1,
+    #quickCast_img2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+
+    #quickCast_tryme {
+        font-family: 'Neonderthaw', cursive;
+        font-size: 30px;
+        /* overflow-wrap: break-word; */
+        text-align: center;
+        width: 40px;
+        line-height: 30px;
+    }
+
+/* ABOUT ME */
+    #about_me .title{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .skills {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .skills img {
+        width: 50px;
+    }
+/* } */
