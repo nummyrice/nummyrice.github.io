@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='text/javascript' src='/portfolio.js'></script>
     <link rel="stylesheet" href="portfolio.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,13 +15,31 @@
 </head>
 <body>
     <nav id='nav_bar'>
-        <div id="mobile_menu">
-            <svg width="77" height="55" viewBox="0 0 77 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M23.8577 9.30076H73.2437C75.0914 9.30076 76.5937 7.24051 76.5937 4.70415C76.5937 2.16611 75.0945 0.107544 73.2437 0.107544H23.8577C22.0101 0.107544 20.511 2.16779 20.511 4.70415C20.511 7.2422 22.0069 9.30076 23.8577 9.30076Z" fill="black"/>
-                <path d="M72.0256 23.0959H4.72185C2.20261 23.0959 0.159302 25.1561 0.159302 27.6925C0.159302 30.2305 2.20428 32.2891 4.72185 32.2891H72.0256C74.5448 32.2891 76.5881 30.2289 76.5881 27.6925C76.5881 25.1544 74.5431 23.0959 72.0256 23.0959Z" fill="black"/>
-                <path d="M73.2396 45.6993H23.8577C22.0101 45.6993 20.511 47.7595 20.511 50.2959C20.511 52.8339 22.0101 54.8925 23.8577 54.8925H73.2437C75.0914 54.8925 76.5937 52.8323 76.5937 50.2959C76.5921 47.7578 75.0913 45.6993 73.2405 45.6993H73.2396Z" fill="black"/>
-            </svg>
+        <div class="side_menu">
+            <div class="burger_box">
+                <div class="menu-icon-container">
+                    <a href="#" class="menu-icon js-menu_toggle closed">
+                        <span class="menu-icon_box">
+                            <span class="menu-icon_line menu-icon_line--1"></span>
+                            <span class="menu-icon_line menu-icon_line--2"></span>
+                            <span class="menu-icon_line menu-icon_line--3"></span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <!-- <h2 class="menu_title">Menu Title</h2> -->
+                <ul class="list_load">
+                    <li class="list_item"><input type="button" onClick="document.getElementById('nav_bar').scrollIntoView();" value="Intro"/></li>
+                    <li class="list_item"><input type="button" onClick="document.getElementById('tableGater').scrollIntoView();" value="tableGater"/></li>
+                    <li class="list_item"><input type="button" onClick="document.getElementById('harmony').scrollIntoView();" value="harmony.io"/></li>
+                    <li class="list_item"><input type="button" onClick="document.getElementById('quickCast').scrollIntoView();" value="quickCast"/></li>
+                    <li class="list_item"><input type="button" onClick="document.getElementById('about_me').scrollIntoView();" value="About Me"/></li>
+                </ul>
+                <div class="spacer_box"><p></p></div>
+            </div>
         </div>
+        <!-- <div id="spacer"></div> -->
         <a href='https://github.com/nummyrice'>
             <svg width="43" height="47" viewBox="0 0 43 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M42.8721 17.1976C42.8611 14.3092 41.8645 11.5117 40.0476 9.26642C40.6647 6.70011 40.4718 4.00536 39.4972 1.55221C39.305 1.07998 38.911 0.71894 38.4243 0.567931C37.7352 0.331806 35.1276 -0.110907 29.8143 3.33262V3.3333C27.5287 2.72997 25.1716 2.44512 22.8084 2.487C20.4417 2.44444 18.0807 2.72929 15.7922 3.3333C10.341 -0.18924 7.50689 0.38113 6.93652 0.548586C6.44712 0.705768 6.05384 1.07436 5.8637 1.55207C4.88629 3.99696 4.68655 6.68416 5.29331 9.24713C3.41668 11.4806 2.41669 14.3202 2.47907 17.2367C2.47907 28.1201 8.70726 31.4065 14.4146 32.5678C14.1215 33.2843 13.9198 34.0346 13.8147 34.8013C13.8044 34.8829 13.8044 34.966 13.8147 35.0477V38.0582C8.61957 38.4913 7.50747 35.4506 7.39906 35.106V35.1067C7.37366 35.0264 7.34414 34.9474 7.30983 34.8699C6.30634 32.8232 4.54022 31.2505 2.38983 30.4914C1.48792 30.1901 0.51179 30.6768 0.210616 31.5787C-0.090699 32.4806 0.395942 33.4567 1.29785 33.7586C2.4894 34.1889 3.48338 35.0387 4.09276 36.1492C4.78189 38.3827 7.59615 41.9154 13.7948 41.5215V44.3555C13.7948 45.3069 14.5656 46.0777 15.517 46.0777C16.4676 46.0777 17.2391 45.3069 17.2391 44.3555V35.1752C17.3695 34.1724 17.8061 33.2348 18.4883 32.4887C18.977 32.0315 19.1541 31.3321 18.9427 30.6973C18.7313 30.0631 18.1692 29.6094 17.5047 29.5366C11.5023 28.8379 5.95293 26.8605 5.95293 17.1679H5.95224C5.87193 14.8026 6.78551 12.5115 8.47128 10.8504C8.92842 10.359 9.07941 9.65681 8.86526 9.02055C8.28526 7.33617 8.24752 5.51241 8.75681 3.80535C10.8694 4.28238 12.8538 5.21243 14.5719 6.53103C15.0194 6.82686 15.5775 6.90305 16.0874 6.73763C18.2742 6.07183 20.553 5.76296 22.838 5.82269C25.1188 5.76297 27.395 6.07185 29.5783 6.73763C30.0882 6.90442 30.6469 6.82823 31.0938 6.53103C32.7487 5.26258 34.643 4.34215 36.6631 3.82468C37.1648 5.55093 37.1202 7.38974 36.5347 9.08925C36.3391 9.66651 36.4667 10.3048 36.8696 10.762C38.4984 12.5013 39.421 14.7855 39.4574 17.168C39.4574 26.8405 33.6224 28.8482 27.9056 29.5367C27.2048 29.6149 26.6234 30.1139 26.4408 30.7948C26.2583 31.4757 26.5115 32.1985 27.0792 32.6172C27.6894 33.0798 28.3977 34.3784 28.3977 36.5528V44.3461C28.3977 45.2974 29.1685 46.0682 30.1192 46.0682C31.0705 46.0682 31.8413 45.2974 31.8413 44.3461V36.5528C31.8592 35.1821 31.6086 33.8217 31.1035 32.5478C35.7283 31.5642 42.8723 28.5236 42.8723 17.1975L42.8721 17.1976Z" fill="black"/>
@@ -36,7 +56,7 @@
             </svg>
         </a>
     </nav>
-    <hr>
+    <hr id="nav_bottom_boarder">
     <section id='intro'>
         <div id='photo_and_name'>
             <img id='photo' alt="creator's photo" src='./assets/IMG_2321.png'/>
@@ -47,6 +67,7 @@
         <p class='intro_text'>I also work with Python and have experience with Flask SQLAlchemy.</p>
         <p class='intro_text'>Check out my most recent creations =></p>
     </section>
+    <hr class="center_diamond">
     <section id='tableGater'>
         <div id='tableGater_section_head'>
             <h1 class='title'>TABLEGATER</h1>
@@ -78,6 +99,7 @@
             </a>
         </div>
     </section>
+    <hr class="center_diamond">
     <section id='harmony'>
             <div id='harmony_section_head'>
                 <svg width="89" height="87" viewBox="0 0 89 87" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,6 +129,7 @@
                 <img alt='harmony website chat screenshot' src='./assets/harmony_server_list.png'/>
             </div>
     </section>
+    <hr class="center_diamond">
     <section id='quickCast'>
         <div id='quickCast_section_head'>
             <svg width="73" height="75" viewBox="0 0 73 75" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -131,24 +154,25 @@
             </a>
         </div>
     </section>
+    <hr class="center_diamond">
     <section id='about_me'>
         <h1 class='title'>About Me</h1>
         <p class='about_me_text'>I spent most of my life in West Michigan. I taught theatre and English as a young adult and then moved into IT where I started thinking more and more about software design.</p>
         <p class='about_me_text'>I’m skilled with Javascript and Python and my past projects use React, express, and flask-SQLAlchemy.</p>
         <p class='about_me_text'>Here are my all-time favorite libraries I’ve used.</p>
         <div class='skills' id='skill_1'>
-            <img alt='html, css, javascript logo' src='./assets/html-css-js.png'/>
-            <img alt='react logo' src='./assets/react-icon.png'/>
+            <img id="javascript" alt='html, css, javascript logo' src='./assets/html-css-js.png'/>
+            <img id="react" alt='react logo' src='./assets/react-icon.png'/>
             <img alt='python logo' src='./assets/python.png'/>
         </div>
         <div class='skills' id='skill_2'>
-            <img alt='expresslogo' src='./assets/express.png'/>
-            <img alt='postgresql logo' src='./assets/postgres.png'/>
+            <img id="express" alt='expresslogo' src='./assets/express.png'/>
+            <img id="postgresql" alt='postgresql logo' src='./assets/postgres.png'/>
             <img alt='flask logo' src='./assets/flask.png'/>
         </div>
         <div class='skills' id='skill_3'>
-            <img alt='sequelize logo' src='./assets/sequelize.png'/>
-            <img alt='sqlalchemy logo' src='./assets/sqlalchemy.png'/>
+            <img id="sequelize" alt='sequelize logo' src='./assets/sequelize.png'/>
+            <img  id="sqlalchemy" alt='sqlalchemy logo' src='./assets/sqlalchemy.png'/>
         </div>
     </section>
 </body>
