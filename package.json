@@ -1,6 +1,16 @@
 {
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
+  },
   "dependencies": {
-    "n": "^10.1.0",
-    "stable": "^0.1.8"
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
