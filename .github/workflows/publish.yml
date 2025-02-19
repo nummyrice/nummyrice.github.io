@@ -33,10 +33,16 @@ jobs:
       - name: Build with Next.js 🏗️
         run: npx next build
 
+      - name: Confirm PWD 📂
+        run: echo "_______________________________________________Current directory is $(pwd)"
+
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+
+      - name: List files
+        run: ls -la # or use tree . for a tree like structure
 
   deploy:
     environment:
