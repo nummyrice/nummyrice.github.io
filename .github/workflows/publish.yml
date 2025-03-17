@@ -33,8 +33,11 @@ jobs:
       - name: Build with Next.js 🏗️
         run: npx next build
 
-      - name: Confirm PWD 📂
-        run: echo "_______________________________________________Current directory is $(pwd)"
+      - name: Fix permissions
+        run: |
+          chmod -c -R +rX "_site/" | while read line; do
+            echo "::warning title=Invalid file permissions automatically fixed::$line"
+          done
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
