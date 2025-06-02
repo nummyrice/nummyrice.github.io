@@ -8,10 +8,10 @@ export default function HomePage() {
     <RootLayout>
       <h1>Nicholas Rice</h1>
       <img
-      className="rounded-full object-cover w-32 h-32"
+      className="rounded-full w-32 h-32"
       alt="Nicholas Rice"
       src="/nrice_pic.png" />
-      <Button>Click Me!</Button>
+      <Button className="w-52 text-red-500">Click Me!</Button>
     </RootLayout>
   )
 }
