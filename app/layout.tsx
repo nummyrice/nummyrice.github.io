@@ -14,7 +14,7 @@ export default function RootLayout({
       <header>
         <h1>My Site</h1>
       </header>
-      <main>{children}</main>
+      <main className="flex flex-col items-center justify-center h-screen overflow-y-auto">{children}</main>
     </body>
     </html>
   )
