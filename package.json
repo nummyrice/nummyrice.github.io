@@ -6,23 +6,26 @@
     "start": "next start"
   },
   "dependencies": {
-    "@heroui/avatar": "^2.2.16",
-    "@heroui/button": "^2.2.16",
-    "@heroui/image": "^2.2.12",
+    "@heroui/avatar": "^2.2.16-beta.3",
+    "@heroui/button": "^2.2.20-beta.3",
+    "@heroui/image": "^2.2.13-beta.2",
+    "@heroui/react": "^2.8.0-beta.6",
     "@heroui/system": "^2.4.16",
     "@heroui/theme": "^2.4.16",
-    "framer-motion": "^12.5.0",
+    "framer-motion": "^12.15.0",
     "next": "latest",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "tailwindcss": "^4.1.8"
+    "react-dom": "^19.1.0"
   },
   "engines": {
     "node": ">=18"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.8",
     "@types/node": "22.10.10",
     "@types/react": "19.0.8",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^4.1.8",
     "typescript": "5.7.3"
   }
 }

@@ -1,1 +1,2 @@
 @import 'tailwindcss';
+/* Removed @plugin as it is not valid in CSS. Plugins should be configured in tailwind.config.js */

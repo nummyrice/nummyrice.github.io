@@ -1,5 +1,6 @@
 import Head from "next/head"
 import './globals.css'
+import { HeroUIProvider } from "@heroui/react";
 
 export default function RootLayout({
   children
@@ -11,12 +12,14 @@ export default function RootLayout({
       <Head>
         <title>Nicholas Rice</title>
       </Head>
-    <body>
-      <header>
-        <h1>My Site</h1>
-      </header>
-      <main className="flex flex-col items-center justify-center h-screen overflow-y-auto">{children}</main>
-    </body>
+      <body>
+        <HeroUIProvider>
+          <header>
+            <h1>My Site</h1>
+          </header>
+          <main className="flex flex-col items-center justify-center h-screen overflow-y-auto">{children}</main>
+        </HeroUIProvider>
+      </body>
     </html>
   )
 }
