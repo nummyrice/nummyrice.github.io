@@ -1,6 +1,12 @@
-import Head from "next/head"
-import './globals.css'
+import type { Metadata } from 'next'
 import { HeroUIProvider } from "@heroui/react";
+import './globals.css';
+import 'tailwindcss/tailwind.css'
+
+
+export const metadata: Metadata = {
+  title: 'Nicholas Rice',
+}
 
 export default function RootLayout({
   children
@@ -9,9 +15,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <title>Nicholas Rice</title>
-      </Head>
       <body>
         <HeroUIProvider>
           <header>
